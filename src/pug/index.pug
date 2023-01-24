@@ -1,0 +1,7 @@
+extends layouts/_main.pug
+include mixins/_card.pug
+
+block prepend nav
+  - var site = 'index'
+block content
+  +card('This is the title', 'this is the content')

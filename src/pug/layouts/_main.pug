@@ -1,0 +1,22 @@
+block head
+  doctype html
+  html(lang="de")
+    head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      block title
+        title Pug Sass Starter - Home
+      block headStyles
+        link(rel="stylesheet", href="css/style.css")
+      block headScripts
+        script(src="js/script.js") 
+      block favicons
+    block body
+      body
+        block nav
+          include ../includes/_nav.pug
+        block content
+          p sorry, no content
+        block footer
+          include ../includes/_footer.pug
